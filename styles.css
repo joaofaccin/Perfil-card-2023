@@ -62,13 +62,14 @@ img {
 }
 
 .card{
-  position: relative;
-  width: 290px;
-  background: var(--gradient-color);
-  border-radius: 1rem 1rem 11rem 11rem;
-  padding: 2.5rem 1.5rem 3.5rem;
-  text-align: center;
-  box-shadow: 0 8px 32px hsl(20, 14%, 91%);
+    position: absolute;
+    width: 290px;
+    top: 100px;
+    background: var(--gradient-color);
+    border-radius: 1rem 1rem 11rem 11rem;
+    padding: 2.5rem 1.5rem 3.5rem;
+    text-align: center;
+    box-shadow: 0 8px 32px hsl(20, 14%, 95%);
 }
 
 .card__img{
@@ -106,8 +107,15 @@ img {
   font-weight: 600;
   margin-bottom: .25rem;
 }
+.card__info{
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+  margin-bottom: .25rem;
+  display: flex;
+  justify-content: center;
+}
 
-.card__profession{
+.card__profession {
   font-size: var(--smaller-font-size);
   font-weight: 500;
 }
@@ -124,6 +132,7 @@ img {
   border-radius: 1rem 1rem 11rem 11rem;
   clip-path: circle(16px at 250px 40px);
   transition: clip-path .4s ease-in-out;
+  box-shadow: 0 8px 22px hsl(20, 14%, 91%);
 }
 
 .info__icon{
@@ -179,7 +188,7 @@ img {
   color: var(--title-color);
 }
 
-.info__profession, .info__location{
+.info__profession, .info__location .info__contatc{
   font-size: smaller;
 }
 
