@@ -232,8 +232,10 @@ img {
 }
 
 footer{
-  color: aliceblue;
-  text-align: center;
-  font-style: italic;
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-63%, 20%);
   
 }
