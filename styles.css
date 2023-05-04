@@ -55,13 +55,15 @@ img {
 
 /*=============== CARD ===============*/
 .container{
-  height: 100vh;
-  margin-inline: 1.5rem;
-  display: grid;
-  place-items: center;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .card{
+  
     position: absolute;
     width: 290px;
     top: 100px;
@@ -247,4 +249,18 @@ footer{
   left: 50%;
   transform: translate(-63%, 20%);
   
+}
+
+@media screen and (max-width: 600px) {
+
+  .card{
+    position: absolute;
+    width: 290px;
+    top: 100px;
+    background: var(--gradient-color);
+    border-radius: 1rem 1rem 11rem 11rem;
+    padding: 2.5rem 1.5rem 3.5rem;
+    text-align: center;
+    box-shadow: 0 8px 32px hsl(20, 14%, 95%);
+}
 }
